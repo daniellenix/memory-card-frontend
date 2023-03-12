@@ -87,7 +87,7 @@ const EditDeck = () => {
   const updateCard = async (card) => {
     try {
       await axios.patch(
-        `https:///at0yw2tnya.execute-api.us-east-1.amazonaws.com/dev/updatecardbyid/${deckId}/${
+        `https:///at0yw2tnya.execute-api.us-east-1.amazonaws.com/Dev/updatecardbyid/${deckId}/${
           shownCard - 1
         }`,
         { card: card }
