@@ -23,7 +23,7 @@ const DecksList = () => {
   const getDecksByOwnerId = async (id) => {
     try {
       const response = await axios.get(
-        `https://aqk0rsung8.execute-api.us-east-1.amazonaws.com/dev/getdeckbyownerid/${id}`
+        `https://at0yw2tnya.execute-api.us-east-1.amazonaws.com/Dev/getdeckbyownerid/${id}`
       );
       setDecks(response.data);
     } catch (err) {
@@ -40,7 +40,7 @@ const DecksList = () => {
   const deleteDeck = async (id) => {
     try {
       await axios.delete(
-        `https://aqk0rsung8.execute-api.us-east-1.amazonaws.com/dev/deletebyid/${id}`
+        `https://at0yw2tnya.execute-api.us-east-1.amazonaws.com/Dev/deletebyid/${id}`
       );
       await getDecksByOwnerId(ownerId);
     } catch (err) {

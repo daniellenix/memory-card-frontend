@@ -24,7 +24,7 @@ const Account = () => {
   const editAccountInfo = async () => {
     try {
       await axios.put(
-        "https://aqk0rsung8.execute-api.us-east-1.amazonaws.com/dev/edituserinfo",
+        "https://at0yw2tnya.execute-api.us-east-1.amazonaws.com/Dev/edituserinfo",
         {
           firstname,
           lastname,
