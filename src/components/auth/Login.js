@@ -23,7 +23,7 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       const response = await axios.post(
-        "https://aqk0rsung8.execute-api.us-east-1.amazonaws.com/Dev/login",
+        "https://at0yw2tnya.execute-api.us-east-1.amazonaws.com/Dev/login",
         data
       );
 
