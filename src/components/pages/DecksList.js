@@ -27,7 +27,10 @@ const DecksList = () => {
   const getDecksByOwnerId = async (id) => {
     try {
       const response = await axios.get(
-        `https://at0yw2tnya.execute-api.us-east-1.amazonaws.com/Dev/getdeckbyownerid/${id}`
+        `https://at0yw2tnya.execute-api.us-east-1.amazonaws.com/Dev/getdeckbyownerid/${id}`,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
       );
       setDecks(response.data);
     } catch (err) {
