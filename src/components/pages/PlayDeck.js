@@ -13,6 +13,7 @@ const PlayDeck = () => {
   const addToast = useToastContext();
 
   const { deckId } = useParams();
+  const token = localStorage.getItem("token");
 
   const getDeckInfo = async (id) => {
     try {
