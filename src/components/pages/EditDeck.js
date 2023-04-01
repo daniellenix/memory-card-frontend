@@ -34,7 +34,10 @@ const EditDeck = () => {
   const getDeckInfo = async (id) => {
     try {
       const response = await axios.get(
-        `https://at0yw2tnya.execute-api.us-east-1.amazonaws.com/Dev/getdeckbyid/${id}`
+        `https://at0yw2tnya.execute-api.us-east-1.amazonaws.com/Dev/getdeckbyid/${id}`,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
       );
 
       setCurrentDeck({
