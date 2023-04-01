@@ -17,7 +17,7 @@ const PlayDeck = () => {
   const getDeckInfo = async (id) => {
     try {
       const response = await axios.get(
-        `https://aqk0rsung8.execute-api.us-east-1.amazonaws.com/dev/getdeckbyid/${id}`
+        `https://aqk0rsung8.execute-api.us-east-1.amazonaws.com/Dev/getdeckbyid/${id}`
       );
 
       setCurrentDeck({

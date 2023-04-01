@@ -23,12 +23,12 @@ const Register = () => {
   const onSubmit = async (data) => {
     try {
       await axios.post(
-        "https://aqk0rsung8.execute-api.us-east-1.amazonaws.com/dev/register",
+        "https://aqk0rsung8.execute-api.us-east-1.amazonaws.com/Dev/register",
         data
       );
 
       const loginResponse = await axios.post(
-        "https://aqk0rsung8.execute-api.us-east-1.amazonaws.com/dev/login",
+        "https://aqk0rsung8.execute-api.us-east-1.amazonaws.com/Dev/login",
         data
       );
 
